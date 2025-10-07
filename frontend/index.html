@@ -1201,15 +1201,15 @@
           </li>
 
           <li>
-            <p class="footer-list-item">+91-6372994494</p>
+            <p class="footer-list-item">+91-8006141617</p>
           </li>
 
           <li>
-            <p class="footer-list-item">khaanakhazana@gmail.com</p>
+            <p class="footer-list-item">pankajkandari810@gmail.com</p>
           </li>
 
           <li>
-            <address class="footer-list-item">Bhubaneswar, Odisha 757001</address>
+            <address class="footer-list-item">Dehradun,Uttarakhand , 248001</address>
           </li>
 
         </ul>
@@ -1311,3 +1311,35 @@
 </body>
 
 </html>
+
+<!-- Recommendation / Booking Modal -->
+<div class="modal" id="recommendationModal" aria-hidden="true" data-modal>
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Close" data-modal-close>&times;</button>
+    <h2 class="h2">Get Recommendations / Book a Table</h2>
+
+    <form id="recommendationForm">
+      <label>
+        Location
+        <input type="text" name="location" required placeholder="City or area" class="input-field">
+      </label>
+
+      <label>
+        Dishes (comma separated)
+        <input type="text" name="dishes" placeholder="pizza, burger" class="input-field">
+      </label>
+
+      <label>
+        Minimum rating
+        <input type="number" name="minRating" min="0" max="5" step="0.1" value="4" class="input-field">
+      </label>
+
+      <div style="margin-top:12px; display:flex; gap:8px;">
+        <button type="submit" class="btn">Get Recommendations</button>
+        <button type="button" class="btn btn-hover" data-modal-cancel>Cancel</button>
+      </div>
+    </form>
+
+    <div id="recommendationResults" style="margin-top:16px;"></div>
+  </div>
+</div>
